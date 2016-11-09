@@ -23,6 +23,7 @@ public class Test01 {
 		driver.get(Constants.URL);
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
+		System.out.println("Before");
 		
 	
 		
