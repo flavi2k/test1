@@ -10,14 +10,14 @@ import utilities.Constants;
 
 public class AbstractPage {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	
 	public AbstractPage() {
 		// TODO Auto-generated constructor stub
 	}
 	
 	public AbstractPage(WebDriver driver) {
-		this.driver = driver;
+		AbstractPage.driver = driver;
         initWebElements();
 	}
 	
