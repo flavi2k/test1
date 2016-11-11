@@ -48,9 +48,9 @@ public class Checkbox extends AbstractPage {
 		for (int i =0; i<allCBs.size(); i++) {
 
 			if (allCBs.get(i).isEnabled()) {
-				System.out.println("Element " + allCBLabels.get(i).getText() + " enabled");
+				System.out.println("Element " + allCBLabels.get(i).getText() + " with index " + i + " is enabled");
 			}
-			else System.out.println("Element " + allCBLabels.get(i).getText() + " disabled");
+			else System.out.println("Element " + allCBLabels.get(i).getText() + " with index " + i + " is disabled");
 		}
 	}
 
