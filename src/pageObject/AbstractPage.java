@@ -38,5 +38,6 @@ public class AbstractPage {
 	public void tearDown() throws Exception {
 		Thread.sleep(2000);
 		driver.close();
+		driver.quit();
 	}
 }
