@@ -11,6 +11,7 @@ import utilities.Constants;
 public class AbstractPage {
 	
 	public static WebDriver driver;
+	public static String space = "______________________________________";
 	
 	public AbstractPage() {
 		// TODO Auto-generated constructor stub

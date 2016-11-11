@@ -11,6 +11,7 @@ public class Checkbox extends AbstractPage {
 
 	protected WebElement mondayCB, sundayCB, mondayLabel, sundayLabel;
 
+
 	public Checkbox(WebDriver driver) {
 		super(driver);
 	}
@@ -36,12 +37,12 @@ public class Checkbox extends AbstractPage {
 		// if button is enabled, click it
 		if (sundayCB.isEnabled()) {
 			sundayCB.click();
-			System.out.println("Checkbox " + sundayLabel.getText() + " is enabled and selected");
+			System.out.println("Checkbox " + sundayLabel.getText() + " is enabled and SELECTED");
 		}
 		else System.out.println("Checkbox " + sundayLabel.getText() + " is disabled");
 	}
 
-	public void displayEnabledCBs() {
+	public void displayElements() {
 		List<WebElement> allCBs = driver.findElements(By.xpath("//div//span //input [contains(@id,'gwt-debug-cwCheckBox')]"));
 		List<WebElement> allCBLabels = driver.findElements(By.xpath("//div//span //label [contains(@id,'gwt-debug-cwCheckBox')]"));
 
