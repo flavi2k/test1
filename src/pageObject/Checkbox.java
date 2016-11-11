@@ -1,14 +1,18 @@
 package pageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pageObject.AbstractPage;
 
 public class Checkbox extends AbstractPage {
-		
+	
 	protected WebElement mondayCB, sundayCB, mondayLabel, sundayLabel;
 	
-	
+	public Checkbox(WebDriver driver) {
+		super(driver);
+	}
+		
 	public void displayMessage() {
 		System.out.println("Message is displayed");
 	}

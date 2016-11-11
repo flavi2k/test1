@@ -3,12 +3,12 @@ package test;
 import org.junit.Test;
 import pageObject.AbstractPage;
 import pageObject.Checkbox;
-import pageObject.Radiobutton;
 
 public class Test01 extends AbstractPage{
 	
-	Checkbox cb = new Checkbox();
-	protected Radiobutton rb = new Radiobutton();
+		
+	Checkbox cb = new Checkbox(driver);
+	
 
 	@Test
 	public void test()  {

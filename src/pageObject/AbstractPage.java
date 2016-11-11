@@ -3,15 +3,27 @@ package pageObject;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import utilities.Constants;
 
 public class AbstractPage {
 	
-	protected WebDriver driver;
-	public WebElement we;
+	public WebDriver driver;
+	
+	public AbstractPage() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public AbstractPage(WebDriver driver) {
+		this.driver = driver;
+        initWebElements();
+	}
+	
+	public void initWebElements(){
+        PageFactory.initElements(driver, this);
+    }
 				
 	@Before
 	public void setUp()  {
