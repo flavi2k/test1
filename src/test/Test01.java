@@ -11,38 +11,31 @@ import pageObject.Radiobutton;
 public class Test01 extends AbstractPage{
 
 
-	Checkbox cb = new Checkbox(driver);
-	Radiobutton rb = new Radiobutton(driver);
-	Basicbutton bb = new Basicbutton(driver);
-	Listbox lb = new Listbox(driver);
-	Menubar mb = new Menubar(driver);
-
-
 	@Test
 	public void test() throws InterruptedException  {
 
-		cb.displayElements();
-		cb.selectElementWithIndex(2);
-		cb.clickOnMonday();
+		Checkbox.displayElements();
+		Checkbox.selectElementWithIndex(2);
+		Checkbox.clickOnMonday();
 		System.out.println(space);
 		
-		rb.navigateToRadioButton();
-		rb.displayElements();
+		Radiobutton.navigateToRadioButton();
+		Radiobutton.displayElements();
 		System.out.println(space);
-		rb.displaySelectedElements();
+		Radiobutton.displaySelectedElements();
 		System.out.println(space);
 		Thread.sleep(2000);
 		
-		bb.navigateToBasicbutton();
-		bb.clickNormalButton();
+		Basicbutton.navigateToBasicbutton();
+		Basicbutton.clickNormalButton();
 		
-		lb.navigateToListbox();
+		Listbox.navigateToListbox();
 		Thread.sleep(2000);
-		lb.selectSports();
+		Listbox.selectSports();
 		Thread.sleep(2000);
 		
-		mb.navigateToMenubar();
-		mb.hoverFileMenu();
+		Menubar.navigateToMenubar();
+		Menubar.hoverFileMenu();
 		
 	}
 

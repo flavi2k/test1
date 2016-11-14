@@ -12,12 +12,12 @@ public class Menubar extends AbstractPage{
 		super(driver);
 	}
 	
-	public void navigateToMenubar() {
+	public static void navigateToMenubar() {
 		driver.findElement(By.xpath("//div [text()='Menu Bar']")).click();
 		
 	}
 	
-	public void hoverFileMenu() throws InterruptedException {
+	public static void hoverFileMenu() throws InterruptedException {
 		Actions action = new Actions(driver);
 		WebElement menu = driver.findElement(By.xpath("//td [text()='File']"));
 		

@@ -9,17 +9,17 @@ import pageObject.AbstractPage;
 
 public class Checkbox extends AbstractPage {
 
-	protected WebElement mondayCB, sundayCB, mondayLabel, sundayLabel;
+	protected static WebElement mondayCB, sundayCB, mondayLabel, sundayLabel;
 
 
 	public Checkbox(WebDriver driver) {
 		super(driver);
 	}
 
-	public void clickOnMonday()  {
+	public static void clickOnMonday()  {
 
-		mondayCB = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-input"));
-		mondayLabel = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-label"));
+		 mondayCB = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-input"));
+		 mondayLabel = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-label"));
 
 
 		// if button is enabled, click it
@@ -30,7 +30,7 @@ public class Checkbox extends AbstractPage {
 		else System.out.println("Checkbox " + mondayLabel.getText() + " is disabled");
 	}
 
-	public void clickOnSunday() {
+	public static void clickOnSunday() {
 		sundayCB = driver.findElement(By.id("gwt-debug-cwCheckBox-Sunday-input"));
 		sundayLabel = driver.findElement(By.id("gwt-debug-cwCheckBox-Sunday-label"));
 
@@ -42,7 +42,7 @@ public class Checkbox extends AbstractPage {
 		else System.out.println("Checkbox " + sundayLabel.getText() + " is disabled");
 	}
 
-	public void displayElements() {
+	public static void displayElements() {
 		List<WebElement> allCBs = driver.findElements(By.xpath("//div//span //input [contains(@id,'gwt-debug-cwCheckBox')]"));
 		List<WebElement> allCBLabels = driver.findElements(By.xpath("//div//span //label [contains(@id,'gwt-debug-cwCheckBox')]"));
 
@@ -55,7 +55,7 @@ public class Checkbox extends AbstractPage {
 		}
 	}
 
-	public void selectElementWithIndex(int index) {
+	public static  void selectElementWithIndex(int index) {
 		List<WebElement> allCBs = driver.findElements(By.xpath("//div//span //input [contains(@id,'gwt-debug-cwCheckBox')]"));
 		int numberOfElements = allCBs.size();
 

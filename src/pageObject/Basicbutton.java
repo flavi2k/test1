@@ -11,11 +11,11 @@ public class Basicbutton extends AbstractPage{
 		super(driver);
 	}
 	
-	public void navigateToBasicbutton() {
+	public static void navigateToBasicbutton() {
 		driver.findElement(By.xpath("//div[text()='Basic Button']")).click();
 	}
 	
-	public void clickNormalButton() throws InterruptedException {
+	public static void clickNormalButton() throws InterruptedException {
 		WebElement normalButton = driver.findElement(By.id("gwt-debug-cwBasicButton-normal"));
 		normalButton.click();
 		Thread.sleep(2000);

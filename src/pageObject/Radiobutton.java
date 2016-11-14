@@ -16,11 +16,11 @@ public class Radiobutton extends AbstractPage{
 	}
 	
 
-	public void navigateToRadioButton() {
+	public static void navigateToRadioButton() {
 		driver.findElement(By.xpath("//div[text()='Radio Button']")).click();
 	}
 
-	public void displayElements() {
+	public static void displayElements() {
 		
 		List<WebElement> colorRBs = driver.findElements(By.xpath("//div //input [contains(@id,'color')]"));
 		List<WebElement> colorLabelRBs = driver.findElements(By.xpath("//div //label [contains(@id,'color')]"));
@@ -46,7 +46,7 @@ public class Radiobutton extends AbstractPage{
 		}
 	}
 	
-	public void displaySelectedElements() {
+	public static void displaySelectedElements() {
 		List<WebElement> colorRBs = driver.findElements(By.xpath("//div //input [contains(@id,'color')]"));
 		List<WebElement> colorLabelRBs = driver.findElements(By.xpath("//div //label [contains(@id,'color')]"));
 		List<WebElement> sportRBs = driver.findElements(By.xpath("//div //input [contains(@id,'sport')]"));

@@ -1,5 +1,7 @@
 package pageObject;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
@@ -30,6 +32,7 @@ public class AbstractPage {
 	public void setUp()  {
 		System.setProperty("webdriver.chrome.driver", "D:\\Kit\\chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(Constants.URL);
 		driver.manage().window().maximize();
 		

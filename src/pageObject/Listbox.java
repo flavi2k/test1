@@ -10,11 +10,11 @@ public class Listbox extends AbstractPage {
 		super(driver);
 	}
 	
-	public void navigateToListbox() {
+	public static void navigateToListbox() {
 		driver.navigate().to("http://samples.gwtproject.org/samples/Showcase/Showcase.html#!CwListBox");
 	}
 	
-	public void selectSports() {
+	public static void selectSports() {
 		Select sel =  new Select(driver.findElement(By.id("gwt-debug-cwListBox-dropBox")));
 		sel.selectByValue("Sports");
 		
