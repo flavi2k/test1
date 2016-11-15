@@ -19,7 +19,6 @@ public class Basicbutton extends AbstractPage{
 		WebElement normalButton = driver.findElement(By.id("gwt-debug-cwBasicButton-normal"));
 		logger.info("Click on normal button");
 		normalButton.click();
-		Thread.sleep(2000);
 		Alert alert = driver.switchTo().alert();
 		logger.info("Accept the alert");
 		alert.accept();

@@ -1,6 +1,8 @@
 package pageObject;
 
 import java.util.List;
+
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,24 +11,26 @@ import pageObject.AbstractPage;
 
 public class Checkbox extends AbstractPage {
 
-
-
 	protected static WebElement mondayCB, sundayCB, mondayLabel, sundayLabel;
-
 
 	public Checkbox(WebDriver driver) {
 		super(driver);
 	}
 
 	public static void clickOnMonday()  {
-		mondayCB = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-input"));
-		mondayLabel = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-label"));
+		//mondayCB = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-input"));
+		//mondayLabel = driver.findElement(By.id("gwt-debug-cwCheckBox-Monday-label"));
+		
+		mondayCB = getWhenVizible(driver,By.id("gwt-debug-cwCheckBox-Monday-input"),5000);
+		mondayLabel = getWhenVizible(driver,By.id("gwt-debug-cwCheckBox-Monday-label"),5000);
+		
 
 		// if button is enabled, click it
 		if (mondayCB.isEnabled()) {
 			mondayCB.click();
-			System.out.println("Checkbox " + mondayLabel.getText() + " is enabled and selected");
-			logger.info("Checkbox " + mondayLabel.getText() + " is enabled and selected");
+			Assert.assertTrue(mondayCB.isSelected());
+			System.out.println("Checkbox " + mondayLabel.getText() + " is enabled and SELECTED");
+			logger.info("Checkbox " + mondayLabel.getText() + " is enabled and SELECTED");
 		}
 		else { System.out.println("Checkbox " + mondayLabel.getText() + " is disabled");
 		logger.info("Checkbox " + mondayLabel.getText() + " is disabled");

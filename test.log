@@ -1,80 +1,80 @@
-Nov 14, 2016 3:31:41 PM pageObject.AbstractPage setUp
+Nov 15, 2016 12:04:29 PM pageObject.AbstractPage setUp
 INFO: Navigate to URL
-Nov 14, 2016 3:31:42 PM pageObject.AbstractPage setUp
+Nov 15, 2016 12:04:29 PM pageObject.AbstractPage setUp
 INFO: Maximize browser
-Nov 14, 2016 3:31:42 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Monday with index 0 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Tuesday with index 1 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Wednesday with index 2 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Thursday with index 3 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Friday with index 4 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Saturday with index 5 is disabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox displayElements
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox displayElements
 INFO: Element Sunday with index 6 is disabled
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox selectElementWithIndex
+Nov 15, 2016 12:04:30 PM pageObject.Checkbox selectElementWithIndex
 INFO: There are 7 elements on this page
-Nov 14, 2016 3:31:43 PM pageObject.Checkbox clickOnMonday
-INFO: Checkbox Monday is enabled and selected
-Nov 14, 2016 3:31:43 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Checkbox clickOnMonday
+INFO: Checkbox Monday is enabled and SELECTED
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element blue with index 0 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element red with index 1 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element yellow with index 2 is disabled
-Nov 14, 2016 3:31:43 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element green with index 3 is enabled
-Nov 14, 2016 3:31:43 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Baseball with index 0 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Basketball with index 1 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Football with index 2 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Hockey with index 3 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Soccer with index 4 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displayElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displayElements
 INFO: Element Water Polo with index 5 is enabled
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element blue with index 0 is not slected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element red with index 1 is not slected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element yellow with index 2 is not slected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element green with index 3 is not slected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Baseball with index 0 is not selected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:31 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Basketball with index 1 is not selected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:32 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Football with index 2 is SELECTED
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:32 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Hockey with index 3 is not selected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:32 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Soccer with index 4 is not selected
-Nov 14, 2016 3:31:44 PM pageObject.Radiobutton displaySelectedElements
+Nov 15, 2016 12:04:32 PM pageObject.Radiobutton displaySelectedElements
 INFO: Element Water Polo with index 5 is not selected
-Nov 14, 2016 3:31:46 PM pageObject.Basicbutton clickNormalButton
+Nov 15, 2016 12:04:34 PM pageObject.Basicbutton clickNormalButton
 INFO: Click on normal button
-Nov 14, 2016 3:31:48 PM pageObject.Basicbutton clickNormalButton
+Nov 15, 2016 12:04:34 PM pageObject.Basicbutton clickNormalButton
 INFO: Accept the alert
-Nov 14, 2016 3:31:50 PM pageObject.Listbox selectSports
+Nov 15, 2016 12:04:36 PM pageObject.Listbox selectSports
 INFO: Select Sports from drop-down list
-Nov 14, 2016 3:31:51 PM pageObject.Listbox selectSports
+Nov 15, 2016 12:04:36 PM pageObject.Listbox selectSports
 INFO: Select Football
-Nov 14, 2016 3:31:51 PM pageObject.Listbox selectSports
+Nov 15, 2016 12:04:36 PM pageObject.Listbox selectSports
 INFO: Select Polo
-Nov 14, 2016 3:31:53 PM pageObject.Menubar hoverFileMenu
+Nov 15, 2016 12:04:38 PM pageObject.Menubar hoverFileMenu
 INFO: Hover File menu
-Nov 14, 2016 3:31:55 PM pageObject.Menubar hoverFileMenu
+Nov 15, 2016 12:04:39 PM pageObject.Menubar hoverFileMenu
 INFO: Click Open
-Nov 14, 2016 3:31:57 PM pageObject.Menubar hoverFileMenu
+Nov 15, 2016 12:04:41 PM pageObject.Menubar hoverFileMenu
 INFO: Accept alert
-Nov 14, 2016 3:31:59 PM pageObject.AbstractPage tearDown
+Nov 15, 2016 12:04:43 PM pageObject.AbstractPage tearDown
 INFO: Close browser

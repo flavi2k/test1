@@ -11,9 +11,13 @@ import java.util.logging.SimpleFormatter;
 
 import org.junit.After;
 import org.junit.Before;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utilities.Constants;
 
@@ -36,6 +40,20 @@ public class AbstractPage {
 
 	public void initWebElements(){
 		PageFactory.initElements(driver, this);
+	}
+	
+	
+	// wait until element is visible
+	public static WebElement getWhenVizible(WebDriver driver, By locator, int timeout) {
+		WebElement element = null;
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		return element;
+	}
+	
+	public static void waitForAlert() {
+	WebDriverWait wait = new WebDriverWait(driver, 3);
+	wait.until(ExpectedConditions.alertIsPresent());
 	}
 
 	@Before
